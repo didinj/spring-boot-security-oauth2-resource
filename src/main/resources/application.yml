@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/myoauth2
+    username: djamware
+    password: dj@mw@r3
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/djamware
+          jwk-set-uri: http://localhost:8080/realms/djamware/protocol/openid-connect/certs

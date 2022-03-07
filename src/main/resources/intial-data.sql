@@ -1,0 +1,3 @@
+INSERT INTO board(title, content, author, created_at) VALUES('New Spring Boot Articles', 'Didin J.', 'The new Spring Boot article is available on Djamware.com', current_timestamp);
+INSERT INTO board(title, content, author, created_at) VALUES('Live Tutorial on YouTube', 'Didin J.', 'Live Tutorial about basic Java on YouTube at May 21, 2022', current_timestamp);
+INSERT INTO board(title, content, author, created_at) VALUES('The next stream on Monday', 'Didin J.', 'The next stream on Monday', current_timestamp);
